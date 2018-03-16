@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>registrar</title>
+</head>
+<body>
+	{% if infor_enviado %}
+		<h2>La informacion suministrada es: </h2>
+		{{name}}
+		{{age}}
+		{{cell_phone}}
+	{% else %}
+	<form action="" method="POST">
+		{{% csrf_token %}
+		{{trabajo.as_p}}
+		<input type="submit" value="guardar">	
+		
+	</form>
+	{% endif %}
+	
+		
+</body>
+</html>

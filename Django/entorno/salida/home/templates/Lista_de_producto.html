@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+{% block titulo %}
+	lista de productos
+{% endblock%}
+{%block contenido%}
+	<!--<h1>Lista de producto</h1>-->
+	<!--nombre--precio--stock<br>-->
+
+
+	<table borde="1">
+		<tr>
+			<td>NOMBRE</td>
+			<td>PRECIO</td>
+			<td>DESCRIPCION</td>
+			<td>STOCK</td>
+			<td>STATUS</td>
+			<td>MARCA</td>
+
+		</tr>
+	{% for p in lista %}
+		<tr>
+
+			<th>{{p.nombre}}</th>
+			<th>{{p.precio}}</th>
+			<th>{{p.descripcion}}</th>
+			<th>{{p.stock}}</th>
+			<th>{{p.status}}</th>
+			<th>{{p.marca}}</th>
+			<br/>
+		</tr>
+	{% endfor %}
+	</table>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+% extends 'base.html'%}
+{% block titulo %}
+	lista de productos
+{% endblock%}
+{%block contenido%}
+
+
+	<table borde="1">
+		<tr>
+			<td>NOMBRE</td>
+			<td>DESCRIPCION</td>
+		</tr>
+	{% for l in lista %}
+		<tr>
+			<th>{{l.nombre}}</th>
+			<th>{{descripcion}}</th>
+		</tr>
+	{% endfor %}
+	</table>
+
+{% endblock %}

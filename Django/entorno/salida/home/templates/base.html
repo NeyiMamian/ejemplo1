@@ -1,0 +1,21 @@
+<!DOCTYPE html><html>
+
+<head>
+	{% block titulo %}
+	{% endblock %}
+</head>
+<body>
+
+	<nav>
+		<ul>
+			<li> <a href="{%url 'vista_about' %}">about</a></li>
+			<li><a href="{%url 'vista1_ejercito' %}">ejercito</a></li>
+			<li><a href="{%url 'vista_contacto' %}">contacto</a></li>
+		</ul>
+	</nav>
+	
+
+	{% block contenido %}
+	{% endblock %}
+</body>
+</html>
